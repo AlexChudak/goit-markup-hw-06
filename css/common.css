@@ -22,6 +22,13 @@ ul {
   --accent-color: #2196f3;
   --primary-bg-color: #2196f3;
 }
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
 
 /* фон хедера background:#FFFFFF */
 /* фон основной #E5E5E5 */
@@ -52,6 +59,10 @@ ul {
   padding-right: 15px;
   margin: 0 auto;
   outline: 2px solid mediumaquamarine;
+}
+
+.item {
+  text-decoration: none;
 }
 
 .main-nav {
@@ -138,6 +149,8 @@ ul {
   padding-bottom: 32px;
 
   position: relative;
+
+  text-decoration: none;
   
 }
 
@@ -423,7 +436,7 @@ footer {
 }
 
 .title-sender{
-  
+
   font-family: Roboto;
 font-style: normal;
 font-weight: bold;
