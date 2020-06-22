@@ -52,7 +52,7 @@
           ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
           ДЛЯ ВАШЕГО БИЗНЕСА
         </h1>
-        <a href="" class="button">Заказать услугу</a>
+        <a href="" class="button" data-modal-open>Заказать услугу</a>
       </section>
     </div>
     <!--Features-->
@@ -321,6 +321,49 @@
         </ul>
       </section>
     </div>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+
+      <div class="modal" >
+      <form class="form">
+          <svg class= "close">
+            <use href="./images/close.svg"></use>
+          </svg>
+        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним.</h2>
+        <div class="form-field">
+          <input type="text" class="form-input" name="name" id="name" placeholder=" " >
+          <label for="name" class="form-label" >Имя</label>
+          <svg class="icon"><use href="./images/symbol-defs.svg#icon-name"></use></svg>
+        </div>
+        <div class="form-field">
+          <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " />
+          <label for="tel" class="form-label" >Телефон</label>
+          <svg class="icon"><use href="./images/symbol-defs.svg#icon-trubka"></use></svg>
+        </div>
+        <div class="form-field">
+          <input type="email" class="form-input" name="mail" id="mail" placeholder=" "/>
+          <label for="mail" class="form-label">Почта</label>
+          <svg class="icon"><use href="./images/symbol-defs.svg#icon-soap"></use></svg>
+        </div>
+        <div class="form-textarea">
+          <textarea class="input-textarea" name="comment" id="comment" rows="20" placeholder=" "></textarea>
+          <label for="comment"class="label-textarea">Kомментарий</label>
+        </div>
+      
+        <div class="form-checkbox">
+          <label class="checkbox-field">
+          <input class="checkbox" type="checkbox"name="policy" id="policy"/>
+          <span class="icon-checkbox"></span>
+          <span class="checkbox-title">Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-link"> Условия договора</a> </span>
+        </label>
+        </div>
+       
+        <button class="button-checkbox" type="submit" data-modal-close>Отправить</button>
+          
+      </form>
+      </div>
+      </div>
+
     <!--футер-->
     <footer class="container ">
       <!--Adress-->
@@ -382,13 +425,15 @@
             </div>
             <!--подпишитесь на рассылку-->
             <div>
-        <b>подпишитесь на рассылку</b>
-        <a href="" class="button">Подписаться
-          <svg class="icon-telegram">
-            <use href="./images/symbol-defs.svg#icon-icon-send" >              
-            </use>
-          </svg>
-        </a>
+                <b class="title-sender" >подпишитесь на рассылку</b>
+                <div class="email-container" >
+                <input type="text" class="input-footer" name="name" id="name" placeholder="E-mail"/>
+                <a href="" class="button footer">Подписаться
+                <svg class="icon-telegram">
+                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+                </a>
+                </div>
             </div>
           </div>
       <p class="madeby">2020 | Developed by GoIT Students</p>

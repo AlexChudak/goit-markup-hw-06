@@ -11,10 +11,16 @@
   </head>
   <body>
 
+<div class="backdrop is-hidden">
+
+<div class="modal" >
 <form class="form">
+    <svg class= "close">
+      <use href="./images/close.svg"></use>
+    </svg>
   <h2 class="form-title">Оставьте свои данные, мы вам перезвоним.</h2>
   <div class="form-field">
-    <input type="text" class="form-input" name="name" id="name" placeholder=" " >
+    <input type="text" class="form-input" name="name" id="name" placeholder=" "/>
     <label for="name" class="form-label" >Имя</label>
     <svg class="icon"><use href="./images/symbol-defs.svg#icon-name"></use></svg>
   </div>
@@ -44,7 +50,8 @@
   <button class="button-checkbox" type="submit">Отправить</button>
     
 </form>
-
+</div>
+</div>
 
 </body>
 </html>
